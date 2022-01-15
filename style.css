@@ -3,9 +3,6 @@ body{
     sans-serif;
 }
 
-.product-title{
-
-}
 nav {
     display: flex;
     justify-content: space-between;
@@ -84,6 +81,12 @@ color: orange;
     font-size: 20px;
     margin-top: 30px;
 }
+.section4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
 footer{
     background-color: black;
 }
@@ -99,4 +102,18 @@ footer{
     font-size: 30px;
      background-color: #228b224f;
      border-radius: 50%;
+}
+@media (max-width:680px) {
+    .container{
+        width: 100%;
+
+    }
+    .brand-collection,
+    .section1,
+    .navigation {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    
 }
